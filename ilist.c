@@ -9,6 +9,34 @@ struct ilist {
     int count;
 };
 
+struct int_list {
+    ilist* (*create)();
+    void (*print)(ilist*);
+    void (*print_in_reverse)(ilist*);
+    void (*push)(ilist*, int data);
+    void (*add)(ilist*, int data);
+    int (*pop)(ilist* tail);
+    int (*remove)(ilist*);
+    void (*reverse)(ilist*);
+    void (*insert)(ilist*, int,int);
+    int (*delete)(ilist*,int);
+};
+
+int_list import_int_list() {
+    int_list l;
+    l.print= ilist_print;
+    l.print_in_reverse = ilist_print_in_reverse;
+    l.push = ilist_push;
+    l.add = ilist_shift;
+    l.pop= ilist_pop; 
+    l.remove = ilist_unshift;
+    l.reverse = ilist_reverse;
+    l.insert = ilist_insert;
+    l.delete= ilist_delete;
+    l.create = create_ilist;
+    return l;
+}
+
 ilist* create_ilist() {
     ilist* l = malloc(sizeof(ilist));
     l->head = NULL;
@@ -142,7 +170,7 @@ int ilist_unshift(ilist* l)
     return res;
 }
 
-int ilist_insert(ilist* l, int p, int n)
+void ilist_insert(ilist* l, int p, int n)
 {
     ilist_node *temp = l->head;
     ilist_node *new_node = ilist_new_node(n);
@@ -155,7 +183,7 @@ int ilist_insert(ilist* l, int p, int n)
     new_node->next = temp->next;
     temp->next = new_node;
     (l->count)++;
-    return new_node->data;
+    new_node->data;
 }
 
 int ilist_delete(ilist* l, int p)

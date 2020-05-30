@@ -9,6 +9,36 @@ struct dlist {
     int count;
 };
 
+
+
+struct double_list {
+    dlist* (*create)();
+    void (*print)(dlist*);
+    void (*print_in_reverse)(dlist*);
+    void (*push)(dlist*, double data);
+    void (*add)(dlist*, double data);
+    double (*pop)(dlist* tail);
+    double (*remove)(dlist*);
+    void (*reverse)(dlist*);
+    void (*insert)(dlist*, int,double);
+    double (*delete)(dlist*,int);
+};
+
+double_list import_double_list() {
+    double_list l;
+    l.print= dlist_print;
+    l.print_in_reverse = dlist_print_in_reverse;
+    l.push = dlist_push;
+    l.add = dlist_shift;
+    l.pop= dlist_pop; 
+    l.remove = dlist_unshift;
+    l.reverse = dlist_reverse;
+    l.insert = dlist_insert;
+    l.delete= dlist_delete;
+    l.create = create_dlist;
+return l;
+}
+
 dlist* create_dlist() {
     dlist* l = malloc(sizeof(dlist));
     l->head = NULL;
@@ -16,7 +46,6 @@ dlist* create_dlist() {
     l->count = 0;
     return l;
 }
-
 dlist_node *dlist_new_node(double data)
 {
     dlist_node *temp = malloc(sizeof(dlist_node));
@@ -142,7 +171,7 @@ double dlist_unshift(dlist* l)
     return res;
 }
 
-double dlist_insert(dlist* l, int p, double n)
+void dlist_insert(dlist* l, int p, double n)
 {
     dlist_node *temp = l->head;
     dlist_node *new_node = dlist_new_node(n);
@@ -154,8 +183,8 @@ double dlist_insert(dlist* l, int p, double n)
     }
     new_node->next = temp->next;
     temp->next = new_node;
+    new_node->data;
     (l->count)++;
-    return new_node->data;
 }
 
 double dlist_delete(dlist* l, int p)
