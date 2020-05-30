@@ -30,7 +30,7 @@ void dlist_print(dlist* l)
     dlist_node *p = l->head;
     while (p != NULL)
     {
-        printf("%d ", p->data);
+        printf("%lf ", p->data);
         p = p->next;
     }
     printf("\n");
@@ -45,7 +45,7 @@ void dlist_print_in_reverve_recursive_part(dlist_node* head)  {
     if (head == NULL)
         return;
     dlist_print_in_reverve_recursive_part(head->next);
-    printf("%d  ", head->data);
+    printf("%lf  ", head->data);
 }
 
 void dlist_push(dlist* l, double data)
