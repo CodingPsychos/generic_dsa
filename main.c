@@ -1,22 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dsa.c"
-double_list dl;
+string_list dl;
 
 void main() {
-dl = import_double_list();
+dl = import_string_list();
 
-dlist* dlins = dl.create();
-dl.push(dlins,1);
-dl.push(dlins,2);
-dl.push(dlins,3);
-dl.push(dlins,4);
-dl.push(dlins,5);
+slist* dlins = dl.create();
+dl.push(dlins,"hari");
+dl.push(dlins,"haran");
+dl.push(dlins,"ramanathan");
+dl.push(dlins,"karpagavalli");
+dl.push(dlins,"rishi");
+dl.add(dlins,"family");
+//dl.print(dlins);
+//dl.pop(dlins);
+//dl.remove(dlins);
+//dl.reverse(dlins);
+dl.insert(dlins,1,"rishi");
+//dl.delete(dlins,1);
+printf("\n");
 dl.print(dlins);
-dl.add(dlins,0);
-dl.add(dlins,-1);
-dl.add(dlins,-2);
-dl.add(dlins,-3);
-dl.add(dlins,-4);
-dl.print(dlins);
+printf("\n");
+
 }
