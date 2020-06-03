@@ -1,76 +1,76 @@
-void ilist_shift(ilist* l, int data)
+void int_list_shift(int_list* l, int data)
 {
     if ((l->head) == NULL)
     {
-        (l->head) = ilist_new_node(data);
+        (l->head) = int_list_new_node(data);
         (l->tail) = (l->head);
     }
     else
     {
-        ilist_node *p = ilist_new_node(data);
+        int_list_node *p = int_list_new_node(data);
         p->next = (l->head);
         (l->head) = p;
     }
     (l->count)++;
 }
-void dlist_shift(dlist* l, double data)
+void double_list_shift(double_list* l, double data)
 {
     if ((l->head) == NULL)
     {
-        (l->head) = dlist_new_node(data);
+        (l->head) = double_list_new_node(data);
         (l->tail) = (l->head);
     }
     else
     {
-        dlist_node *p = dlist_new_node(data);
-        p->next = (l->head);
-        (l->head) = p;
-    }
-    (l->count)++;
-}
-
-void flist_shift(flist* l, float data)
-{
-    if ((l->head) == NULL)
-    {
-        (l->head) = flist_new_node(data);
-        (l->tail) = (l->head);
-    }
-    else
-    {
-        flist_node *p = flist_new_node(data);
+        double_list_node *p = double_list_new_node(data);
         p->next = (l->head);
         (l->head) = p;
     }
     (l->count)++;
 }
 
-void clist_shift(clist* l, char data)
+void float_list_shift(float_list* l, float data)
 {
     if ((l->head) == NULL)
     {
-        (l->head) = clist_new_node(data);
+        (l->head) = float_list_new_node(data);
         (l->tail) = (l->head);
     }
     else
     {
-        clist_node *p = clist_new_node(data);
+        float_list_node *p = float_list_new_node(data);
         p->next = (l->head);
         (l->head) = p;
     }
     (l->count)++;
 }
 
-void slist_shift(slist* l, char* data)
+void char_list_shift(char_list* l, char data)
 {
     if ((l->head) == NULL)
     {
-        (l->head) = slist_new_node(data);
+        (l->head) = char_list_new_node(data);
         (l->tail) = (l->head);
     }
     else
     {
-        slist_node *p = slist_new_node(data);
+        char_list_node *p = char_list_new_node(data);
+        p->next = (l->head);
+        (l->head) = p;
+    }
+    (l->count)++;
+}
+
+void string_list_shift(string_list* l, char* data)
+{
+    if ((l->head) == NULL)
+    {
+        (l->head) = string_list_new_node(data);
+        (l->tail) = (l->head);
+    }
+    else
+    {
+        string_list_node *p = string_list_new_node(data);
         p->next = (l->head);
         (l->head) = p;
     }

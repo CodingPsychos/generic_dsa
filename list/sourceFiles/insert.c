@@ -1,11 +1,11 @@
 
-void ilist_insert(ilist* l, int p, int n)
+void int_list_insert(int_list* l, int p, int n)
 {
-    ilist_node *temp = l->head;
-    ilist_node *new_node = ilist_new_node(n);
+    int_list_node *temp = l->head;
+    int_list_node *new_node = int_list_new_node(n);
     int count = 0;
     if(p==1)
-	    ilist_shift(l,n);
+	    int_list_shift(l,n);
     else{
     while (count != p - 2)
     {
@@ -19,13 +19,13 @@ void ilist_insert(ilist* l, int p, int n)
 }
 }
 
-void dlist_insert(dlist* l, int p, double n)
+void double_list_insert(double_list* l, int p, double n)
 {
-    dlist_node *temp = l->head;
-    dlist_node *new_node = dlist_new_node(n);
+    double_list_node *temp = l->head;
+    double_list_node *new_node = double_list_new_node(n);
     int count = 0;
   if(p==1)
-	  dlist_shift(l,n);
+	  double_list_shift(l,n);
   else{
     while (count != p - 2)
     {
@@ -39,13 +39,13 @@ void dlist_insert(dlist* l, int p, double n)
 }
 }
 
-void flist_insert(flist* l, int p, float n)
+void float_list_insert(float_list* l, int p, float n)
 {
-    flist_node *temp = l->head;
-    flist_node *new_node = flist_new_node(n);
+    float_list_node *temp = l->head;
+    float_list_node *new_node = float_list_new_node(n);
     int count = 0;
     if(p==1)
-	    flist_shift(l,n);
+	    float_list_shift(l,n);
     else{
     while (count != p - 2)
     {
@@ -59,13 +59,13 @@ void flist_insert(flist* l, int p, float n)
 }
 }
 
-void clist_insert(clist* l, int p, char n)
+void char_list_insert(char_list* l, int p, char n)
 {
-    clist_node *temp = l->head;
-    clist_node *new_node = clist_new_node(n);
+    char_list_node *temp = l->head;
+    char_list_node *new_node = char_list_new_node(n);
     int count = 0;
     if(p==1)
-	    clist_shift(l,n);
+	    char_list_shift(l,n);
     else{
     while (count != p - 2)
     {
@@ -79,13 +79,13 @@ void clist_insert(clist* l, int p, char n)
 }
 }
 
-void slist_insert(slist* l, int p, char* n)
+void string_list_insert(string_list* l, int p, char* n)
 {
-    slist_node *temp = l->head;
-    slist_node *new_node = slist_new_node(n);
+    string_list_node *temp = l->head;
+    string_list_node *new_node = string_list_new_node(n);
     int count = 0;
     if(p==1)
-	    slist_shift(l,n);
+	    string_list_shift(l,n);
     else{
     while (count != p - 2)
     {

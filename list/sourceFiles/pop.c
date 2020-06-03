@@ -1,5 +1,5 @@
 
-int ilist_pop(ilist* l)
+int int_list_pop(int_list* l)
 {
     int res = 0;
     if (l->head == NULL)
@@ -22,7 +22,7 @@ int ilist_pop(ilist* l)
     else
     {
         res = (l->tail)->data;
-        ilist_node *p = (l->head);
+        int_list_node *p = (l->head);
         while (p->next->next != NULL)
             p = p->next;
         (l->tail) = p;
@@ -33,7 +33,7 @@ int ilist_pop(ilist* l)
 }
 
 
-double dlist_pop(dlist* l)
+double double_list_pop(double_list* l)
 {
     double res = 0;
     if (l->head == NULL)
@@ -56,7 +56,7 @@ double dlist_pop(dlist* l)
     else
     {
         res = (l->tail)->data;
-        dlist_node *p = (l->head);
+        double_list_node *p = (l->head);
         while (p->next->next != NULL)
             p = p->next;
         (l->tail) = p;
@@ -67,7 +67,7 @@ double dlist_pop(dlist* l)
 }
 
 
-float flist_pop(flist* l)
+float float_list_pop(float_list* l)
 {
     float res = 0;
     if (l->head == NULL)
@@ -90,7 +90,7 @@ float flist_pop(flist* l)
     else
     {
         res = (l->tail)->data;
-        flist_node *p = (l->head);
+        float_list_node *p = (l->head);
         while (p->next->next != NULL)
             p = p->next;
         (l->tail) = p;
@@ -101,7 +101,7 @@ float flist_pop(flist* l)
 }
 
 
-char clist_pop(clist* l)
+char char_list_pop(char_list* l)
 {
     char res = 0;
     if (l->head == NULL)
@@ -124,7 +124,7 @@ char clist_pop(clist* l)
     else
     {
         res = (l->tail)->data;
-        clist_node *p = (l->head);
+        char_list_node *p = (l->head);
         while (p->next->next != NULL)
             p = p->next;
         (l->tail) = p;
@@ -135,7 +135,7 @@ char clist_pop(clist* l)
 }
 
 
-char* slist_pop(slist* l)
+char* string_list_pop(string_list* l)
 {
     char* res = 0;
     if (l->head == NULL)
@@ -158,7 +158,7 @@ char* slist_pop(slist* l)
     else
     {
         res = (l->tail)->data;
-        slist_node *p = (l->head);
+        string_list_node *p = (l->head);
         while (p->next->next != NULL)
             p = p->next;
         (l->tail) = p;

@@ -1,7 +1,7 @@
 
-void ilist_print(ilist* l)
+void int_list_print(int_list* l)
 {
-    ilist_node *p = l->head;
+    int_list_node *p = l->head;
     while (p != NULL)
     {
         printf("%d ", p->data);
@@ -11,9 +11,9 @@ void ilist_print(ilist* l)
 }
 
 
-void dlist_print(dlist* l)
+void double_list_print(double_list* l)
 {
-    dlist_node *p = l->head;
+    double_list_node *p = l->head;
     while (p != NULL)
     {
         printf("%d ", p->data);
@@ -23,9 +23,9 @@ void dlist_print(dlist* l)
 }
 
 
-void flist_print(flist* l)
+void float_list_print(float_list* l)
 {
-    flist_node *p = l->head;
+    float_list_node *p = l->head;
     while (p != NULL)
     {
         printf("%f ", p->data);
@@ -35,9 +35,9 @@ void flist_print(flist* l)
 }
 
 
-void clist_print(clist* l)
+void char_list_print(char_list* l)
 {
-    clist_node *p = l->head;
+    char_list_node *p = l->head;
     while (p != NULL)
     {
         printf("%c ", p->data);
@@ -47,9 +47,9 @@ void clist_print(clist* l)
 }
 
 
-void slist_print(slist* l)
+void string_list_print(string_list* l)
 {
-    slist_node *p = l->head;
+    string_list_node *p = l->head;
     while (p != NULL)
     {
         printf("%s ", p->data);

@@ -3,7 +3,7 @@
 #include "dsa.c"
 
 void main() {   
-    ilist* l = create_ilist(); 
+    int_list* l = create_int_list(); 
     while(1){
         printf("\na.push\n"
                 "b.pop\n"
@@ -13,7 +13,7 @@ void main() {
                 "f.delete\n"
                 "g.print\n"
                 "h.print in reverse\n"
-                "i.reverse ilist\n"
+                "i.reverse int_list\n"
                 "j.data\n"
                 "q.quit\n"
             );
@@ -29,14 +29,14 @@ void main() {
                 int a;
                 printf("Enter the value");
                 scanf("%d",&a);
-                ilist_push(l,a);
-                ilist_print(l);
+                int_list_push(l,a);
+                int_list_print(l);
                 printf("count = %d",l->count);
                 break;}
                 
                 case 'b':
-                ilist_pop(l);
-                ilist_print(l);
+                int_list_pop(l);
+                int_list_print(l);
                 printf("count = %d",l->count);
                 break;
                 
@@ -44,14 +44,14 @@ void main() {
                 int a;
                 printf("Enter the value");
                 scanf("%d",&a);
-                ilist_shift(l,a);
-                ilist_print(l);
+                int_list_shift(l,a);
+                int_list_print(l);
                 printf("count = %d",l->count);
                 break;}
                 
                 case 'd':
-                ilist_unshift(l);
-                ilist_print(l);
+                int_list_unshift(l);
+                int_list_print(l);
                 printf("count = %d",l->count);
                 break;
                          
@@ -62,9 +62,9 @@ void main() {
                 scanf("%d",&p);
                 printf("Enter the value");
                 scanf("%d",&n);
-                v=ilist_insert(l,p,n);
+                int_list_insert(l,p,n);
                 printf("\n%d Value added",v);
-                ilist_print(l);
+                int_list_print(l);
                 break;
                 }
                 
@@ -73,29 +73,29 @@ void main() {
                 int p;
                 printf("Enter the position");
                 scanf("%d",&p);
-                v=ilist_delete(l,p);
+                v=int_list_delete(l,p);
                 printf("\n%d position removed",v);
-                ilist_print(l);
+                int_list_print(l);
                 break;
                 }
 
                 case 'g':
-                ilist_print(l);
+                int_list_print(l);
                 break;
                 
                 case 'h':
-                ilist_print_in_reverse(l);
+                int_list_print_in_reverse(l);
                 break;
 
                 case 'i':
-                ilist_reverse(l);
+                int_list_reverse(l);
                 break;
 
                 case 'j':   {
                 int n;
                 printf("Enter the position\n");
                 scanf("%d",&n);
-                printf("%d",ilist_data(l,n));
+                printf("%d",int_list_data(l,n));
                 break;
                 }
                 default:printf("Check the data entered");    

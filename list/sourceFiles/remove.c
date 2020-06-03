@@ -1,4 +1,4 @@
-int ilist_unshift(ilist* l)
+int int_list_unshift(int_list* l)
 {
     int res = 0;
     if ((l->head) == NULL)
@@ -20,7 +20,7 @@ int ilist_unshift(ilist* l)
     return res;
 }
 
-double dlist_unshift(dlist* l)
+double double_list_unshift(double_list* l)
 {
     double res = 0;
     if ((l->head) == NULL)
@@ -42,7 +42,7 @@ double dlist_unshift(dlist* l)
     return res;
 }
 
-float flist_unshift(flist* l)
+float float_list_unshift(float_list* l)
 {
     float res = 0;
     if ((l->head) == NULL)
@@ -64,7 +64,7 @@ float flist_unshift(flist* l)
     return res;
 }
 
-char clist_unshift(clist* l)
+char char_list_unshift(char_list* l)
 {
     char res = 0;
     if ((l->head) == NULL)
@@ -86,7 +86,7 @@ char clist_unshift(clist* l)
     return res;
 }
 
-char* slist_unshift(slist* l)
+char* string_list_unshift(string_list* l)
 {
     char* res = 0;
     if ((l->head) == NULL)

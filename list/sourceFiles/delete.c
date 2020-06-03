@@ -1,10 +1,10 @@
 
-int ilist_delete(ilist* l, int p)
+int int_list_delete(int_list* l, int p)
 {
-    ilist_node *temp = l->head;
+    int_list_node *temp = l->head;
     int count = 1;
     if (p == 1)
-        ilist_unshift(l);
+        int_list_unshift(l);
     else
     {
         while (count != p - 1)
@@ -17,12 +17,12 @@ int ilist_delete(ilist* l, int p)
     (l->count)--;
     return p;
 }
-int dlist_delete(dlist* l, int p)
+int double_list_delete(double_list* l, int p)
 {
-    dlist_node *temp = l->head;
+    double_list_node *temp = l->head;
     int count = 1;
     if (p == 1)
-        dlist_unshift(l);
+        double_list_unshift(l);
     else
     {
         while (count != p - 1)
@@ -35,12 +35,12 @@ int dlist_delete(dlist* l, int p)
     (l->count)--;
     return p;
 }
-int flist_delete(flist* l, int p)
+int float_list_delete(float_list* l, int p)
 {
-    flist_node *temp = l->head;
+    float_list_node *temp = l->head;
     int count = 1;
     if (p == 1)
-        flist_unshift(l);
+        float_list_unshift(l);
     else
     {
         while (count != p - 1)
@@ -53,12 +53,12 @@ int flist_delete(flist* l, int p)
     (l->count)--;
     return p;
 }
-int clist_delete(clist* l, int p)
+int char_list_delete(char_list* l, int p)
 {
-    clist_node *temp = l->head;
+    char_list_node *temp = l->head;
     int count = 1;
     if (p == 1)
-        clist_unshift(l);
+        char_list_unshift(l);
     else
     {
         while (count != p - 1)
@@ -71,12 +71,12 @@ int clist_delete(clist* l, int p)
     (l->count)--;
     return p;
 }
-int slist_delete(slist* l, int p)
+int string_list_delete(string_list* l, int p)
 {
-    slist_node *temp = l->head;
+    string_list_node *temp = l->head;
     int count = 1;
     if (p == 1)
-        slist_unshift(l);
+        string_list_unshift(l);
     else
     {
         while (count != p - 1)

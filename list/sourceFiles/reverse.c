@@ -1,9 +1,9 @@
 
-void ilist_reverse(ilist* l)
+void int_list_reverse(int_list* l)
 {
-    ilist_node *currn = (l->head);
-    ilist_node *prevn = NULL;
-    ilist_node *nextn = NULL;
+    int_list_node *currn = (l->head);
+    int_list_node *prevn = NULL;
+    int_list_node *nextn = NULL;
     while (currn != NULL)
     {
         nextn = currn->next;
@@ -15,11 +15,11 @@ void ilist_reverse(ilist* l)
 }
 
 
-void dlist_reverse(dlist* l)
+void double_list_reverse(double_list* l)
 {
-    dlist_node *currn = (l->head);
-    dlist_node *prevn = NULL;
-    dlist_node *nextn = NULL;
+    double_list_node *currn = (l->head);
+    double_list_node *prevn = NULL;
+    double_list_node *nextn = NULL;
     while (currn != NULL)
     {
         nextn = currn->next;
@@ -31,11 +31,11 @@ void dlist_reverse(dlist* l)
 }
 
 
-void flist_reverse(flist* l)
+void float_list_reverse(float_list* l)
 {
-    flist_node *currn = (l->head);
-    flist_node *prevn = NULL;
-    flist_node *nextn = NULL;
+    float_list_node *currn = (l->head);
+    float_list_node *prevn = NULL;
+    float_list_node *nextn = NULL;
     while (currn != NULL)
     {
         nextn = currn->next;
@@ -47,11 +47,11 @@ void flist_reverse(flist* l)
 }
 
 
-void clist_reverse(clist* l)
+void char_list_reverse(char_list* l)
 {
-    clist_node *currn = (l->head);
-    clist_node *prevn = NULL;
-    clist_node *nextn = NULL;
+    char_list_node *currn = (l->head);
+    char_list_node *prevn = NULL;
+    char_list_node *nextn = NULL;
     while (currn != NULL)
     {
         nextn = currn->next;
@@ -63,11 +63,11 @@ void clist_reverse(clist* l)
 }
 
 
-void slist_reverse(slist* l)
+void string_list_reverse(string_list* l)
 {
-    slist_node *currn = (l->head);
-    slist_node *prevn = NULL;
-    slist_node *nextn = NULL;
+    string_list_node *currn = (l->head);
+    string_list_node *prevn = NULL;
+    string_list_node *nextn = NULL;
     while (currn != NULL)
     {
         nextn = currn->next;

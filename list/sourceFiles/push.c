@@ -1,6 +1,6 @@
-void ilist_push(ilist* l, int data)
+void int_list_push(int_list* l, int data)
 {
-    ilist_node *new_node = ilist_new_node(data);
+    int_list_node *new_node = int_list_new_node(data);
 
     if ((l->head) == NULL)
     {
@@ -21,9 +21,9 @@ void ilist_push(ilist* l, int data)
     (l->count)++;
 }
 
-void dlist_push(dlist* l, double data)
+void double_list_push(double_list* l, double data)
 {
-    dlist_node *new_node = dlist_new_node(data);
+    double_list_node *new_node = double_list_new_node(data);
 
     if ((l->head) == NULL)
     {
@@ -44,9 +44,9 @@ void dlist_push(dlist* l, double data)
     (l->count)++;
 }
 
-void flist_push(flist* l, float data)
+void float_list_push(float_list* l, float data)
 {
-    flist_node *new_node = flist_new_node(data);
+    float_list_node *new_node = float_list_new_node(data);
 
     if ((l->head) == NULL)
     {
@@ -67,9 +67,9 @@ void flist_push(flist* l, float data)
     (l->count)++;
 }
 
-void clist_push(clist* l, char data)
+void char_list_push(char_list* l, char data)
 {
-    clist_node *new_node = clist_new_node(data);
+    char_list_node *new_node = char_list_new_node(data);
 
     if ((l->head) == NULL)
     {
@@ -90,9 +90,9 @@ void clist_push(clist* l, char data)
     (l->count)++;
 }
 
-void slist_push(slist* l, char* data)
+void string_list_push(string_list* l, char* data)
 {
-    slist_node *new_node = slist_new_node(data);
+    string_list_node *new_node = string_list_new_node(data);
 
     if ((l->head) == NULL)
     {

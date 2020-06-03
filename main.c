@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "dsa.c"
-string_list dl;
+#include "dsa.h"
+string_listf dl;
 
 void main() {
-dl = import_string_list();
+dl = import_string_listf();
 
-slist* dlins = dl.create();
+string_list* dlins = dl.create();
 dl.push(dlins,"hari");
 dl.push(dlins,"haran");
 dl.push(dlins,"ramanathan");
