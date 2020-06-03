@@ -53,7 +53,7 @@ double dlist_pop(dlist* tail);
 double dlist_unshift(dlist*);
 void dlist_reverse(dlist*);
 void dlist_insert(dlist*, int,double);
-double dlist_delete(dlist* ,int);
+int dlist_delete(dlist* ,int);
 
 flist_node* flist_new_node(float data);
 void flist_print(flist*);
@@ -65,7 +65,7 @@ float flist_pop(flist* tail);
 float flist_unshift(flist*);
 void flist_reverse(flist*);
 void flist_insert(flist*, int,float);
-float flist_delete(flist* ,int);
+int flist_delete(flist* ,int);
 
 clist_node* clist_new_node(char data);
 void clist_print(clist*);
@@ -77,7 +77,7 @@ char clist_pop(clist* tail);
 char clist_unshift(clist*);
 void clist_reverse(clist*);
 void clist_insert(clist*, int,char);
-char clist_delete(clist* ,int);
+int clist_delete(clist* ,int);
 
 slist_node* slist_new_node(char* data);
 void slist_print(slist*);
@@ -89,4 +89,4 @@ char* slist_pop(slist* tail);
 char* slist_unshift(slist*);
 void slist_reverse(slist*);
 void slist_insert(slist*, int,char*);
-char* slist_delete(slist* ,int);
+int slist_delete(slist* ,int);
