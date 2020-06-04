@@ -1,26 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dsa.h"
-string_listf dl;
+string_dllf dl;
 
 void main() {
-dl = import_string_listf();
+dl = import_string_dllf();
 
-string_list* dlins = dl.create();
-dl.push(dlins,"hari");
-dl.push(dlins,"haran");
-dl.push(dlins,"ramanathan");
-dl.push(dlins,"karpagavalli");
-dl.push(dlins,"rishi");
-dl.add(dlins,"family");
-//dl.print(dlins);
-//dl.pop(dlins);
-//dl.remove(dlins);
-//dl.reverse(dlins);
-dl.insert(dlins,1,"rishi");
+string_dll* dlins = dl.create();
+dl.push(dlins,"I");
+dl.push(dlins,"need");
+dl.push(dlins,"to");
+dl.push(dlins,"check");
+dl.push(dlins,"this");
+dl.add(dlins,"hai");
+dl.print(dlins);
+dl.pop(dlins);
+dl.remove(dlins);
+printf("count=%d\n",dlins->count);
+dl.reverse(dlins);
+//dl.insert(dlins,4,"project");
 //dl.delete(dlins,1);
-printf("\n");
+//printf("\n");
 dl.print(dlins);
 printf("\n");
-
+dl.print_in_reverse(dlins);
 }

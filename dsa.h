@@ -20,6 +20,26 @@
 #include "list/lib.h"
 #include "list/lib.c"
 
+#include "dll/headerFiles/int_dll.h"
+#include "dll/headerFiles/float_dll.h"
+#include "dll/headerFiles/char_dll.h"
+#include "dll/headerFiles/double_dll.h"
+#include "dll/headerFiles/string_dll.h"
+#include "dll/sourceFiles/push.c"
+#include "dll/sourceFiles/print.c"
+#include "dll/sourceFiles/create.c"
+#include "dll/sourceFiles/print_in_reverse.c"
+#include "dll/sourceFiles/add.c"
+#include "dll/sourceFiles/pop.c"
+#include "dll/sourceFiles/remove.c"
+#include "dll/sourceFiles/reverse.c"
+#include "dll/sourceFiles/insert.c"
+#include "dll/sourceFiles/delete.c"
+#include "dll/sourceFiles/new_node.c"
+
+#include "dll/lib.h"
+#include "dll/lib.c"
+
 
 //doubly_linked_list
 
