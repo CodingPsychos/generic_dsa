@@ -1,2 +1,2 @@
 void double_swap(double*, double*);
-int comparator(double, double, char*);
+int double_comparator(double, double, char*);

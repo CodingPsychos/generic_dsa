@@ -1,59 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "dsa.h"
+#include "../dsa.h"
 
-double_heapf dh;
-
-void main() {
-    dh = import_double_heapf();
-    double * p;
-    p =(double[9]){8,5,4,7,9,2,6,3,1};
-    int n = 9;
-    double_heap* h = dh.create(p, &n, "max");
-
-    dh.build(h);
-    dh.print(h);
-    printf("%lf... ",dh.pop(h));
-    dh.print(h);
-    printf("%lf... ",dh.pop(h));
-    dh.print(h);
-    printf("%lf... ",dh.pop(h));
-    dh.print(h);
-    printf("%lf... ",dh.pop(h));
-    dh.print(h);
-    printf("%lf... ",dh.pop(h));
-
-}
-
-
-/*
-string_dllf dl;
-
-void main() {
-dl = import_string_dllf();
-
-string_dll* dlins = dl.create();
-dl.push(dlins,"I");
-dl.push(dlins,"need");
-dl.push(dlins,"to");
-dl.push(dlins,"check");
-dl.push(dlins,"this");
-dl.add(dlins,"hai");
-dl.print(dlins);
-dl.pop(dlins);
-dl.remove(dlins);
-printf("count=%d\n",dlins->count);
-dl.reverse(dlins);
-//dl.insert(dlins,4,"project");
-//dl.delete(dlins,1);
-//printf("\n");
-dl.print(dlins);
-printf("\n");
-dl.print_in_reverse(dlins);
-}
-*/
-
-/* 
 void main() {   
     int_list* l = create_int_list(); 
     while(1){
@@ -155,4 +103,3 @@ void main() {
         }
     }
 }
-*/
