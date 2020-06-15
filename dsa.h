@@ -71,7 +71,24 @@
 #include "heap/lib.h"
 #include "heap/lib.c"
 
-//Binary_search_treeheap/graph
+//Binary_search_tree
+#include "bst/headerFiles/int_bst.h"
+#include "bst/headerFiles/double_bst.h"
+#include "bst/headerFiles/float_bst.h"
+
+#include "bst/sourceFiles/preorder.c"
+#include "bst/sourceFiles/new_node.c"
+#include "bst/sourceFiles/create.c"
+#include "bst/sourceFiles/push.c"
+#include "bst/sourceFiles/pop.c"
+#include "bst/sourceFiles/postorder.c"
+#include "bst/sourceFiles/inorder.c"
+
+
+#include "bst/lib.h"
+#include "bst/lib.c"
+
+//graph
 
 //avl
 
