@@ -10,7 +10,7 @@ struct int_bstf {
     void (*postorder)(int_bst_node*);
     void (*inorder)(int_bst_node*);
     void (*push)(int_bst_node**,int);
-    int (*pop)(int_bst_node**,int);    
+    void (*pop)(int_bst_node**,int);    
 
 };
 
@@ -20,7 +20,7 @@ struct double_bstf {
     void (*postorder)(double_bst_node*);
     void (*inorder)(double_bst_node*);
     void (*push)(double_bst_node**,double);
-  //  void (*pop)(double_bst_node**,double); 
+   void (*pop)(double_bst_node**,double); 
     
 };
 
@@ -30,7 +30,7 @@ struct float_bstf {
     void (*postorder)(float_bst_node*);
     void (*inorder)(float_bst_node*);
     void (*push)(float_bst_node**,float);
-   // void (*pop)(float_bst_node**,float); 
+    void (*pop)(float_bst_node**,float); 
 };
 
 double_bstf import_double_bstf();

@@ -15,7 +15,7 @@ double_bstf import_double_bstf() {
     l.postorder=double_bst_print_postorder;
     l.inorder=double_bst_print_inorder;
     l.push = double_bst_push;
-  //  l.pop= double_bst_pop;
+    l.pop= double_bst_pop;
     l.create = create_double_bst;
 return l;
 }
@@ -26,7 +26,7 @@ float_bstf import_float_bstf() {
     l.postorder=float_bst_print_postorder;
     l.inorder=float_bst_print_inorder;
     l.push = float_bst_push;
-   // l.pop= float_bst_pop;
+    l.pop= float_bst_pop;
    l.create = create_float_bst;
 return l;
 }
