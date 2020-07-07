@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "../dsa.h"
 
-string_dllf dl;
+#define dl import_string_dllf
 
 void main() {
-dl = import_string_dllf();
+
 
 string_dll* dlins = dl.create();
 dl.push(dlins,"I");

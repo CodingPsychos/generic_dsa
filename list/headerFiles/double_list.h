@@ -13,6 +13,7 @@ double double_list_unshift(double_list*);
 void double_list_reverse(double_list*);
 void double_list_insert(double_list*, int,double);
 int double_list_delete(double_list* ,int);
+double double_list_data(double_list*, int);
 
 struct double_list_node   {
     double data;

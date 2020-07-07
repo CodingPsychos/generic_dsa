@@ -14,6 +14,17 @@ double (*pop)(double_heap*);
 void (*print)(double_heap*);
 };
 
+struct double_heapf import_double_heapf={
+    double_heap_create,
+    double_heap_up,
+    double_heap_down,
+    double_heap_build,
+    double_heap_push,
+    double_heap_pop,
+    double_heap_print,
+
+};
+
 struct int_heapf  {
 int_heap* (*create)(int*, int*, char*);
 void (*up)(int_heap*, int);
@@ -24,6 +35,16 @@ int (*pop)(int_heap*);
 void (*print)(int_heap*);
 };
 
+struct int_heapf import_int_heapf={
+    int_heap_create,
+    int_heap_up,
+    int_heap_down,
+    int_heap_build,
+    int_heap_push,
+    int_heap_pop,
+    int_heap_print,
+
+};
 struct float_heapf  {
 float_heap* (*create)(float*, int*, char*);
 void (*up)(float_heap*, int);
@@ -33,6 +54,18 @@ void (*push)(float_heap*, float);
 float (*pop)(float_heap*);
 void (*print)(float_heap*);
 };
+
+struct float_heapf import_float_heapf={
+    float_heap_create,
+    float_heap_up,
+    float_heap_down,
+    float_heap_build,
+    float_heap_push,
+    float_heap_pop,
+    float_heap_print,
+
+};
+
 struct char_heapf  {
 char_heap* (*create)(char*, int*, char*);
 void (*up)(char_heap*, int);
@@ -43,7 +76,15 @@ char (*pop)(char_heap*);
 void (*print)(char_heap*);
 };
 
-double_heapf import_double_heapf();
-int_heapf import_int_heapf();
-char_heapf import_char_heapf();
-float_heapf import_float_heapf();
+
+struct char_heapf import_char_heapf={
+    char_heap_create,
+    char_heap_up,
+    char_heap_down,
+    char_heap_build,
+    char_heap_push,
+    char_heap_pop,
+    char_heap_print,
+
+};
+

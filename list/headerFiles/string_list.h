@@ -13,6 +13,7 @@ char* string_list_unshift(string_list*);
 void string_list_reverse(string_list*);
 void string_list_insert(string_list*, int,char*);
 int string_list_delete(string_list* ,int);
+char* string_list_data(string_list*, int);
 
 struct string_list_node   {
     char* data;

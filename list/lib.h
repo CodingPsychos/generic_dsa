@@ -15,6 +15,20 @@ struct int_listf {
     void (*reverse)(int_list*);
     void (*insert)(int_list*, int,int);
     int (*delete)(int_list*,int);
+    int (*data)(int_list*, int);
+};
+struct int_listf import_int_listf = {
+    create_int_list,
+    int_list_print,
+    int_list_print_in_reverse,
+    int_list_push,
+    int_list_shift,
+    int_list_pop,
+    int_list_unshift,
+    int_list_reverse,
+    int_list_insert,
+    int_list_delete,
+    int_list_data,
 };
 
 struct double_listf {
@@ -28,6 +42,21 @@ struct double_listf {
     void (*reverse)(double_list*);
     void (*insert)(double_list*, int,double);
     int (*delete)(double_list*,int);
+    double (*data)(double_list*,int);
+};
+
+struct double_listf import_double_listf = {
+    create_double_list,
+    double_list_print,
+    double_list_print_in_reverse,
+    double_list_push,
+    double_list_shift,
+    double_list_pop,
+    double_list_unshift,
+    double_list_reverse,
+    double_list_insert,
+    double_list_delete,
+    double_list_data,
 };
 
 struct float_listf {
@@ -41,6 +70,22 @@ struct float_listf {
     void (*reverse)(float_list*);
     void (*insert)(float_list*, int,float);
     int (*delete)(float_list*,int);
+    float (*data)(float_list*, int);
+};
+
+
+struct float_listf import_float_listf = {
+    create_float_list,
+    float_list_print,
+    float_list_print_in_reverse,
+    float_list_push,
+    float_list_shift,
+    float_list_pop,
+    float_list_unshift,
+    float_list_reverse,
+    float_list_insert,
+    float_list_delete,
+    float_list_data,
 };
 
 struct char_listf {
@@ -54,7 +99,24 @@ struct char_listf {
     void (*reverse)(char_list*);
     void (*insert)(char_list*, int,char);
     int (*delete)(char_list*,int);
+    char (*data)(char_list*, int);
 };
+
+
+struct char_listf import_char_listf = {
+    create_char_list,
+    char_list_print,
+    char_list_print_in_reverse,
+    char_list_push,
+    char_list_shift,
+    char_list_pop,
+    char_list_unshift,
+    char_list_reverse,
+    char_list_insert,
+    char_list_delete,
+    char_list_data,
+};
+
 
 struct string_listf {
     string_list* (*create)();
@@ -67,10 +129,20 @@ struct string_listf {
     void (*reverse)(string_list*);
     void (*insert)(string_list*, int,char*);
     int (*delete)(string_list*,int);
+    char* (*data)(string_list*,int);
 };
 
-double_listf import_double_listf();
-int_listf import_int_listf();
-float_listf import_float_listf();
-char_listf import_char_listf();
-string_listf import_string_listf();
+
+struct string_listf import_string_listf = {
+    create_string_list,
+    string_list_print,
+    string_list_print_in_reverse,
+    string_list_push,
+    string_list_shift,
+    string_list_pop,
+    string_list_unshift,
+    string_list_reverse,
+    string_list_insert,
+    string_list_delete,
+    string_list_data,
+};

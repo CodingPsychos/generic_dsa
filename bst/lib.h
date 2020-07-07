@@ -14,6 +14,15 @@ struct int_bstf {
 
 };
 
+struct int_bstf import_int_bstf= {
+    create_int_bst,
+    int_bst_print_preorder,
+    int_bst_print_postorder,
+    int_bst_print_inorder,
+    int_bst_push,
+    int_bst_pop,
+};
+
 struct double_bstf {
     double_bst_node* (*create)();
     void (*preorder)(double_bst_node*);
@@ -22,6 +31,15 @@ struct double_bstf {
     void (*push)(double_bst_node**,double);
    void (*pop)(double_bst_node**,double); 
     
+};
+
+struct double_bstf import_double_bstf= {
+    create_double_bst,
+    double_bst_print_preorder,
+    double_bst_print_postorder,
+    double_bst_print_inorder,
+    double_bst_push,
+    double_bst_pop,
 };
 
 struct float_bstf {
@@ -33,6 +51,11 @@ struct float_bstf {
     void (*pop)(float_bst_node**,float); 
 };
 
-double_bstf import_double_bstf();
-int_bstf import_int_bstf();
-float_bstf import_float_bstf();
+struct float_bstf import_float_bstf= {
+    create_float_bst,
+    float_bst_print_preorder,
+    float_bst_print_postorder,
+    float_bst_print_inorder,
+    float_bst_push,
+    float_bst_pop,
+};

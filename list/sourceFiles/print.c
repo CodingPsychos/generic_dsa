@@ -16,7 +16,7 @@ void double_list_print(double_list* l)
     double_list_node *p = l->head;
     while (p != NULL)
     {
-        printf("%d ", p->data);
+        printf("%lf ", p->data);
         p = p->next;
     }
     printf("\n");

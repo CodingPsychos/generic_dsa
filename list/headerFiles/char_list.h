@@ -13,6 +13,7 @@ char char_list_unshift(char_list*);
 void char_list_reverse(char_list*);
 void char_list_insert(char_list*, int,char);
 int char_list_delete(char_list* ,int);
+char char_list_data(char_list*, int);
 
 struct char_list_node   {
     char data;

@@ -13,6 +13,7 @@ int int_list_unshift(int_list*);
 void int_list_reverse(int_list*);
 void int_list_insert(int_list*, int,int);
 int int_list_delete(int_list*,int);
+int int_list_data (int_list*, int);
 
 struct int_list_node   {
     int data;

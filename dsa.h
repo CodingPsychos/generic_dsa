@@ -6,6 +6,7 @@
 
 #include "base/sourceFiles/swap.c"
 #include "base/sourceFiles/comparator.c"
+#include "base/sourceFiles/max.c"
 
 //singly_linked_list
 
@@ -26,9 +27,9 @@
 #include "list/sourceFiles/insert.c"
 #include "list/sourceFiles/delete.c"
 #include "list/sourceFiles/new_node.c"
+#include "list/sourceFiles/data.c"
 
 #include "list/lib.h"
-#include "list/lib.c"
 
 //doubly linked list
 
@@ -51,7 +52,7 @@
 #include "dll/sourceFiles/new_node.c"
 
 #include "dll/lib.h"
-#include "dll/lib.c"
+
 
 //heap
 
@@ -69,7 +70,7 @@
 #include "heap/sourceFiles/print.c"
 
 #include "heap/lib.h"
-#include "heap/lib.c"
+
 
 //Binary_search_tree
 #include "bst/headerFiles/int_bst.h"
@@ -86,12 +87,23 @@
 
 
 #include "bst/lib.h"
-#include "bst/lib.c"
+
 
 //graph
 
 //avl
+#include "avl/headerFiles/int_avl.h"
+#include "avl/headerFiles/double_avl.h"
+#include "avl/headerFiles/float_avl.h"
 
+#include "avl/sourceFiles/avl_height.c"
+#include "avl/sourceFiles/avl_get_balance.c"
+#include "avl/sourceFiles/avl_new_node.c"
+#include "avl/sourceFiles/avl_right_rotate.c"
+#include "avl/sourceFiles/avl_left_rotate.c"
+#include "avl/sourceFiles/avl_push.c"
+
+#include "avl/lib.h"
 //stack
 
 //queue

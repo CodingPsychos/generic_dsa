@@ -13,6 +13,7 @@ float float_list_unshift(float_list*);
 void float_list_reverse(float_list*);
 void float_list_insert(float_list*, int,float);
 int float_list_delete(float_list* ,int);
+float float_list_data(float_list*, int);
 
 struct float_list_node   {
     float data;

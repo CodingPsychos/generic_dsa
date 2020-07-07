@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include "../dsa.h"
 
+#define l import_string_listf
+
 void main() {   
-    int_list* l = create_int_list(); 
+    string_list* list = l.create(); 
     while(1){
         printf("\na.push\n"
                 "b.pop\n"
@@ -26,45 +28,48 @@ void main() {
             switch(c){
 
                 case 'a':{
-                int a;
+                char a;
                 printf("Enter the value");
-                scanf("%d",&a);
-                int_list_push(l,a);
-                int_list_print(l);
-                printf("count = %d",l->count);
+                scanf("%c",&a);
+                printf("%c",a);
+                l.push(list,"hari");
+                l.push(list,"haran");
+                l.push(list,"ramanathan");
+                //l.print(list);
+                printf("count = %d",list->count);
                 break;}
                 
                 case 'b':
-                int_list_pop(l);
-                int_list_print(l);
-                printf("count = %d",l->count);
+                l.pop(list);
+                l.print(list);
+                printf("count = %d",list->count);
                 break;
                 
                 case 'c':{
-                int a;
+                char* a;
                 printf("Enter the value");
-                scanf("%d",&a);
-                int_list_shift(l,a);
-                int_list_print(l);
-                printf("count = %d",l->count);
+                scanf("%s",a);
+                l.add(list,a);
+                l.print(list);
+                printf("count = %d",list->count);
                 break;}
                 
                 case 'd':
-                int_list_unshift(l);
-                int_list_print(l);
-                printf("count = %d",l->count);
+                l.remove(list);
+                l.print(list);
+                printf("count = %d",list->count);
                 break;
                          
                 case 'e':{
-                int v;
+                char* v;
                 int p,n;
                 printf("Enter the position");
                 scanf("%d",&p);
                 printf("Enter the value");
-                scanf("%d",&n);
-                int_list_insert(l,p,n);
+                scanf("%s",v);
+                l.insert(list,p,v);
                 printf("\n%d Value added",v);
-                int_list_print(l);
+                l.print(list);
                 break;
                 }
                 
@@ -73,29 +78,29 @@ void main() {
                 int p;
                 printf("Enter the position");
                 scanf("%d",&p);
-                v=int_list_delete(l,p);
+                v=l.delete(list,p);
                 printf("\n%d position removed",v);
-                int_list_print(l);
+                l.print(list);
                 break;
                 }
 
                 case 'g':
-                int_list_print(l);
+                l.print(list);
                 break;
                 
                 case 'h':
-                int_list_print_in_reverse(l);
+                l.print_in_reverse(list);
                 break;
 
                 case 'i':
-                int_list_reverse(l);
+                l.reverse(list);
                 break;
 
                 case 'j':   {
                 int n;
                 printf("Enter the position\n");
                 scanf("%d",&n);
-                printf("%d",int_list_data(l,n));
+                printf("%d",l.data(list,n));
                 break;
                 }
                 default:printf("Check the data entered");    

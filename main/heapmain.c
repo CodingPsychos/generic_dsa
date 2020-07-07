@@ -7,13 +7,13 @@ int_heapf ih;
 float_heapf fh;
 char_heapf ch;
 
+#define ih import_int_heapf
 void main() {
     int * p;
     p =(int[9]){8,5,4,7,9,2,6,3,1};
     int n = 9;
     
-    ih = import_int_heapf();
-    int_heap* hd = ih.create(p, &n, "max");
+  int_heap* hd = ih.create(p, &n, "max");
 
     ih.build(hd);
     ih.print(hd);
