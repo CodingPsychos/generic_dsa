@@ -4,8 +4,8 @@
 
 int main(void){
 //int_bstf l=import_int_bstf();
-#define l  import_int_bstf
-//struct int_bstf l= import_int_bstf;
+//#define l  import_int_bstf
+struct int_bstf l= import_int_bstf;
 int_bst_node* bst=l.create();
 
 	l.push(&bst,5);

@@ -104,7 +104,18 @@
 #include "avl/sourceFiles/avl_push.c"
 
 #include "avl/lib.h"
+
 //stack
+#include "stack/headerFiles/int_stack.h"
+#include "stack/headerFiles/double_stack.h"
+#include "stack/headerFiles/float_stack.h"
+
+#include "stack/sourceFiles/push.c"
+#include "stack/sourceFiles/pop.c"
+#include "stack/sourceFiles/getTop.c"
+#include "stack/sourceFiles/isEmpty.c"
+
+#include "stack/lib.h"
 
 //queue
 
