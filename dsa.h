@@ -89,8 +89,6 @@
 #include "bst/lib.h"
 
 
-//graph
-
 //avl
 #include "avl/headerFiles/int_avl.h"
 #include "avl/headerFiles/double_avl.h"
@@ -118,4 +116,32 @@
 #include "stack/lib.h"
 
 //queue
+
+#include "queue/headerFiles/int_queue.h"
+#include "queue/headerFiles/double_queue.h"
+#include "queue/headerFiles/float_queue.h"
+
+#include "queue/sourceFiles/enqueue.c"
+#include "queue/sourceFiles/dequeue.c"
+#include "queue/sourceFiles/getFront.c"
+#include "queue/sourceFiles/isEmpty.c"
+#include "queue/sourceFiles/getRear.c"
+
+#include "queue/lib.h"
+
+
+//graph
+#include "graph/headerFiles/int_graph.h"
+#include "graph/headerFiles/float_graph.h"
+#include "graph/headerFiles/double_graph.h"
+
+#include "graph/sourceFiles/heapSort.c"
+#include "graph/sourceFiles/create.c"
+#include "graph/sourceFiles/add_edge.c"
+#include "graph/sourceFiles/print.c"
+#include "graph/sourceFiles/dfs.c"
+#include "graph/sourceFiles/bfs.c"
+#include "graph/sourceFiles/dijkstra.c"
+
+#include "graph/lib.h"
 
